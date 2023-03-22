@@ -1,0 +1,259 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+.landing_container {
+  width: 100%;
+  background: #000;
+}
+.top_container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+}
+.modeltune_logo {
+  margin-top: 64px;
+  width: 256px;
+  height: 43.98px;
+  cursor: pointer;
+}
+.landing_title {
+  font-weight: 700;
+  font-size: 72px;
+  max-width: 1195px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 64px;
+}
+.landing_description {
+  font-weight: 400;
+  font-size: 24px;
+  color: #e0e0e0;
+  padding-top: 64px;
+}
+.newsletter_container {
+  padding-top: 48px;
+  display: flex;
+  gap: 16px;
+  max-width: 629px;
+  width: 100%;
+  margin: 0 auto;
+}
+.newsletter_container input {
+  color: #ffffff;
+}
+.input_container {
+  background: #212121;
+  border-radius: 4px;
+  border: none;
+  padding: 23.5px 16px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #6a6a6a;
+  width: 100%;
+}
+
+.input_container:focus-visible {
+  outline: none;
+}
+.join_btn {
+  padding: 20px 48px;
+  color: #303030;
+  font-weight: 700;
+  font-size: 20px;
+  background: #ffffff;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+.discord_btn {
+  padding: 20px 0px;
+  margin-bottom: 30px;
+  color: #ffffff ;
+  font-weight: 700;
+  font-size: 20px;
+  background: #303030;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+.discord_link {
+  padding: 20px 38px;
+}
+.success_text {
+  font-size: 18px;
+  color: #ffffff;
+  margin-top: 55px;
+}
+.input_error_section {
+  font-size: 18px;
+  color: #909090;
+  max-width: 629px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+.landing_image_conatainer {
+  margin-top: 127px;
+  margin-bottom: 402px;
+  position: relative;
+}
+.landing_image_conatainer img {
+  position: absolute;
+  max-width: calc(100vw - 72px);
+  min-height: 534px;
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.bottom_container {
+  max-width: 1440px;
+  width: 100%;
+  background: #fff !important;
+  margin: 387px auto 128px auto;
+  text-align: center;
+}
+.bottom_container h1 {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 108px;
+  max-width: 894px;
+  width: 100%;
+  margin: 0 auto;
+}
+.contact_section {
+  max-width: 467px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 24px;
+  padding-bottom: 8px;
+  border-bottom: 1.5px solid #303030;
+  margin: 40px auto 24px auto;
+}
+.read_email_section {
+  font-size: 18px;
+  color: #909090;
+}
+.loading_text {
+  margin-top: 55px;
+}
+.copyright_container {
+  width: 100%;
+  padding: 64px 0;
+  border-top: 1.5px solid #d9d9d9;
+  font-size: 18px;
+  text-align: center;
+}
+@media only screen and (max-width: 934px) {
+  .landing_title {
+    font-size: 48px;
+    max-width: 725px;
+  }
+  .landing_description {
+    font-size: 20px;
+  }
+  .bottom_container h1 {
+    font-size: 48px;
+    padding-left: 64px;
+    padding-right: 64px;
+    line-height: 72px;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .modeltune_logo {
+    width: 164px;
+    height: 28px;
+    cursor: pointer;
+    margin-top: 72px;
+  }
+  .landing_title {
+    font-size: 24px;
+    max-width: 375px;
+  }
+  .landing_description {
+    font-size: 16px !important;
+    max-width: 291px;
+    margin: 0 auto;
+  }
+  .landing_description {
+    font-size: 20px;
+  }
+  .bottom_container h1 {
+    font-size: 24px;
+    max-width: 310px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+    line-height: 36px;
+  }
+  .newsletter_container {
+    padding-top: 24px;
+    gap: 12px;
+    max-width: 309px;
+  }
+  .input_container {
+    padding: 14px 16px;
+    font-size: 12px;
+  }
+  .input_error_section {
+    color: #909090;
+    max-width: 309px;
+  }
+  .join_btn {
+    padding: 12.5px 23px;
+    font-size: 16px;
+  }
+  .discord_btn {
+    padding: 12.5px 0px;
+    font-size: 16px;
+  }
+  .discord_link {
+    padding: 12.5px 23px;
+  }
+  .landing_image_conatainer {
+    margin-top: 240px;
+    margin-bottom: 239px;
+  }
+  .landing_image_conatainer img {
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    min-height: 100%;
+    height: 351px;
+    margin-bottom: auto;
+  }
+  .bottom_container {
+    margin: 239px auto 64px auto;
+  }
+  .contact_section {
+    font-size: 16px;
+    max-width: 314px;
+    margin: 32px auto 16px auto;
+  }
+  .input_error_section {
+    font-size: 12px;
+  }
+  .read_email_section {
+    font-size: 12px;
+  }
+  .copyright_container {
+    padding: 48px 0;
+    font-size: 12px;
+  }
+  .success_text {
+    font-size: 16px;
+    color: #ffffff;
+  }
+}
