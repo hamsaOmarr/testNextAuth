@@ -52,6 +52,7 @@ const Landing = () => {
   };
 
   if (session) {
+    console.log(session);
     return (
       <>
         Signed in as {session.user?.name}
