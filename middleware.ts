@@ -1,10 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
 
 async function apiAccess(req: NextRequest, res: NextResponse) {
+  const allowedOrigins =
+    "http://localhost:3000" || "https://test-next-auth-psi.vercel.app";
   if (
     req.nextUrl.pathname.startsWith("/api") &&
-    (req.nextUrl.origin !== "http://localhost:3000" ||
-      "https://test-next-auth-psi.vercel.app")
+    req.nextUrl.origin !== allowedOrigins
   ) {
     return NextResponse.json("Origin Unauthorized");
   }
